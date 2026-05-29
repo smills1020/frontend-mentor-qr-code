@@ -1,0 +1,108 @@
+:root {
+    --color-slate-300: #d5e1ef;
+    --color-slate-500: #68778d;
+    --color-slate-900: #1f314f;
+
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-500: 40px;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Allow percentage-based heights */
+html,
+body {
+    height: 100%;
+}
+
+/* 4. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 5. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* CUSTOM STYLES */
+body {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-slate-300);
+    color: black;
+    font-family: Outfit, Arial, sans-serif;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    max-width: 320px;
+    text-align: center;
+}
+
+.qr-code {
+    background-color: white;
+    padding: var(--spacing-200) var(--spacing-200) var(--spacing-500)
+        var(--spacing-200);
+    border-radius: 20px;
+}
+
+.qr-code img {
+    border-radius: 10px;
+    width: 288px;
+}
+
+.qr-code .text {
+    padding: 0 var(--spacing-200);
+}
+
+.qr-code h1 {
+    color: var(--color-slate-900);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 120%;
+    margin-top: var(--spacing-200);
+}
+
+.qr-code p {
+    color: var(--color-slate-500);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 140%;
+    margin-top: var(--spacing-200);
+}
+
+.attribution {
+    color: #999;
+    font-size: 0.6875rem;
+    margin-top: var(--spacing-200);
+    text-align: center;
+}
+
+.attribution a,
+.attribution:visited {
+    color: #aaa;
+}
